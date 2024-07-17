@@ -1,6 +1,6 @@
 ### Education website for College & University
 .
-![Education website template](https://i.ibb.co/0Yr6dLg/education.png)
+![Education website template]
 .
 .
 This is a HTML5 Responsive site template suitable for Courses, colleges, Workshop, Lessons and university sites. In this educational website we have't used any framework, totally based on core languages like HTML & CSS.
@@ -22,8 +22,6 @@ This is a HTML5 Responsive site template suitable for Courses, colleges, Worksho
 .
 .
 .
-
-[![Nihory - Portfolio site template live demo](https://i.ibb.co/vwN8cgW/live-demo.png)](https://education-atulcodex.netlify.app/)
 .
 .
 .
