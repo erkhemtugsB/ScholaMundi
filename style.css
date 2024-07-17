@@ -47,7 +47,7 @@ nav
 
 nav .logo
 {
-	width: 150px;
+	width: 100px;
 	cursor: pointer;
 }
 
@@ -177,8 +177,12 @@ nav .navigation ul li a:hover
 /*------------- Features section styling start -------------*/
 #features
 {
-	padding: 5vw 8vw 0 8vw;
+	padding: 5vw 8vw 5vw 8vw;
 	text-align: center;
+}
+#scholarship-total 
+{
+	font-size: x-large;
 }
 
 #features .fea-base
