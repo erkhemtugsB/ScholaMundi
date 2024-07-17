@@ -27,4 +27,3 @@ This is a HTML5 Responsive site template suitable for Courses, colleges, Worksho
 .
 .
 .
-[![Atul - Buy Me A Coffee](https://i.ibb.co/7rR9S4L/buy-me-a-coffee.png)](https://www.buymeacoffee.com/atulcodex)
