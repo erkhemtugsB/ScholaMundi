@@ -14,6 +14,9 @@
 
 	<!-- External CSS -->
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="service.css">
+	<link rel="stylesheet" href="about.css">
+
 
 	<!-- JQuery CDN link -->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -30,10 +33,10 @@
 		<div class="navigation">
 			<ul>
 				<i id="menu-close" class="fas fa-times"></i>
-				<li><a href="index.html" class="active">Home</a></li>
+				<li><a href="index.html">Home</a></li>
 				<li><a href="about.html">About Us</a></li>
 				<li><a href="team.html">Meet the Team</a></li>
-				<li><a href="service.html">About Services</a></li>
+				<li><a href="service.html" class="active">About Services</a></li>
 				<!--<li><a href="blog.html">Blog</a></li>-->
 				<!--<li><a href="courses.html">Courses</a></li>-->
 				<li><a href="contact.html">Contact</a></li>
@@ -47,57 +50,12 @@
 
 
 	<!-- Hero section starts from here -->
-	<section id="home">
+	<section id="about-home">
 		<h2>
-			Empowering Dreams, Expanding Horizons!
+			About our services
 		</h2>
-		<p>
-			Project ScholaMundi is a non-profit that does the sole function of providing free consultation services to
-			underrepresented student communities from all over the world to pursue college education in the United
-			States.
-		</p>
-		<div class="btn">
-			<!--<a href="#" class="blue">Learn More</a>-->
-			<a href="#" class="yellow">Learn More</a>
-			<!--<a href="#" class="yellow">Visit Courses</a>-->
-		</div>
 	</section>
 	<!-- Hero section ends from here -->
-
-
-	<!-- Features section starts from here -->
-	<section id="features">
-		<h1>Awesome Features</h1>
-		<p>at Schola Mundi</p>
-
-		<div class="fea-base">
-			<div class="fea-box">
-				<i class="fas fa-graduation-cap"></i>
-				<h3>Scholorship Opportunities</h3>
-				<p>
-					Tons of scholarship and financial aid opportunites.
-				</p>
-			</div>
-
-			<div class="fea-box">
-				<i class="fa-solid fa-book-bookmark"></i>
-				<h3>Academic support</h3>
-				<p>
-					Academic support for our talented students
-				</p>
-			</div>
-
-			<div class="fea-box">
-				<i class="fas fa-award"></i>
-				<h3>Real life experience</h3>
-				<p>
-					Real experience and stuff!
-				</p>
-			</div>
-		</div>
-	</section>
-	<!-- Features section ends from here -->
-
 
 	<!-- Courses section starts from here -->
 	<!--<section id="course">
@@ -222,114 +180,160 @@
 	</section> -->
 	<!-- Courses section ends from here -->
 
-
-	<!-- Registration section starts from here -->
-	<section id="registration">
-		<div class="reminder">
-			<p>Get access to countless opportunities for Free</p>
-			<h1>Our students get accepted to</h1>
-			<h1>universities in</h1>
-			<h1 class="scholarship-total">
-				<p style="color: rgb(234, 199, 21); font-size: 75px">50 states</p> around the United States
-			</h1>
-		</div>
-
-		<div class="form">
-			<h3>Get in touch with us NOW!</h3>
-
-			<input type="text" placeholder="Your Name" name="" id="">
-			<input type="email" placeholder="Your Email address" name="" id="">
-			<input type="text" placeholder="Your Message" name="" id="">
-
-			<div class="btn">
-				<a href="#" class="yellow">Submit Form</a>
+	<!-- Blog container starts from here -->
+	<section id="blog-container">
+		<div class="blogs">
+			<div class="post">
+				<img src="img/usCollege1.jpg" alt="">
+				<h2>About Project ScholaMundi</h2>
+				<p>
+					Welcome to Project ScholaMundi, a non-profit organization dedicated to providing 
+					free consultation services to underrepresented student communities globally. Our 
+					mission is to empower academically qualified students from around the world to pursue 
+					higher education in the United States, ensuring they gain admission to top-tier US 
+					institutions and receive the maximum scholarship support they deserve. Our services 
+					are entirely free, centered on advancing the higher education welfare of the public.
+				</p>
 			</div>
+
+			<div class="post">
+				<h2>How We Help You Achieve Your College Dreams</h2>
+				<p>
+					At Project ScholaMundi, we believe every student deserves the opportunity to excel, 
+					regardless of their background. Here’s a step-by-step guide on how we process your application 
+					and guide you through the college application journey:				
+				</p>
+			</div>
+
+			<div class="post">
+				<h2>Initial Consultation:</h2>
+				<ul>
+					<li><h4>Sign Up:</h4>
+						Begin by filling out our online registration form with your basic information and academic background.
+					</li>
+					<li><h4>Meet Your Counselor:</h4>
+						Once registered, you’ll be assigned a dedicated counselor who will arrange an initial meeting to 
+						discuss your academic goals, interests, and aspirations.
+					</li>
+				</ul>
+				<br/><br/>
+				<h2>Academic Assessment:</h2>
+				<ul>
+					<li>
+						<h4>Review of Transcripts and Scores:</h4>
+						Your counselor will review your academic transcripts, standardized test scores, and any other relevant documents.
+					</li>
+					<li>
+						<h4>Personalized Academic Plan:</h4>
+						Based on your academic profile, we’ll create a tailored plan to enhance your strengths and address any areas for improvement.
+					</li>
+				</ul>
+			</div>
+
+			<div class="post">
+				<img src="img/usCollege2.jpg" alt="">
+				<h2>College Selection:</h2>
+				<ul>
+					<h4>Research and Recommendations:</h4>
+					<li>We’ll provide a curated list of top-tier US institutions that align with your academic interests and goals.</li>
+					<h4>College Fit</h4>
+					<li>Our counselors will help you understand the unique attributes of each college to find the best fit for you.</li>
+				</ul>
+			</div>
+
+			<div class="post">
+				<h2>Application Strategy:</h2>
+				<ul>
+					<h4>Timeline and Deadlines</h4>
+					<li>We’ll develop a comprehensive timeline to ensure you meet all application deadlines.</li>
+					<h4>Application Components</h4>
+					<li>Guidance on crafting compelling personal statements, essays, and recommendation letters.</li>
+					<h4>Resume Building:</h4>
+					<li>Assistance in creating a strong academic and extracurricular resume.</li>
+				</ul>
+			</div>
+
+			<div class="post">
+				<h2>Scholarship and Financial Aid:</h2>
+				<ul>
+					<h4>Scholarship Search:</h4>
+					<li>We’ll identify scholarship opportunities and guide you through the application process.</li>
+					<h4>Financial Aid Applications:</h4>
+					<li>Assistance with completing any other financial aid forms to maximize your scholarship potential.</li>
+				</ul>
+			</div>
+			
+			<div class="post">
+				<h2>Application Review:</h2>
+				<ul>
+					<h4>Draft Reviews:</h4>
+					<li>Your counselor will review all parts of your application to ensure they meet the highest standards.</li>
+					<h4>Mock Interviews:</h4>
+					<li>Preparation for college interviews through mock interview sessions and feedback.</li>
+				</ul>
+				<br/><br/><br/>
+				<img src="img/usCollege3.jpg" alt="">
+
+			</div>
+
+			<div class="post">
+				<h2>Submission and Follow-Up:</h2>
+				<ul>
+					<h4>Final Review:</h4>
+					<li>A thorough review of your completed application before submission</li>
+					<h4>Application Tracking:</h4>
+					<li>Keeping track of submission statuses and any additional requirements from colleges.</li>
+				</ul>
+			</div>
+
+			<div class="post">
+				<h2>Post-Admission Support:</h2>
+				<ul>
+					<h4>Decision Guidance:</h4>
+					<li>Assistance in evaluating and understanding your acceptance offers.</li>
+					<h4>Transition Planning:</h4>
+					<li>Guidance on preparing for your transition to college life in the US.</li>
+				</ul>
+			</div>
+			<br/><br/>
+			<div class="post">
+				<h1>Why Choose Project ScholaMundi?</h1>
+				<br/>
+				<ul>
+					<li>Expert Counselors: Our team of experienced counselors is dedicated to your success and knowledgeable 
+						about the US college application process.
+					</li>>
+					<li>
+						Personalized Support: We offer one-on-one counseling tailored to your unique academic and personal background.
+					</li>
+					<li>
+						Comprehensive Services: From initial consultation to post-admission support, we provide end-to-end guidance at no cost to you.
+					</li>
+					<li>
+						Global Reach: We serve underrepresented students from all over the world, promoting diversity and inclusion in US higher education.
+					</li>
+				</ul>
+				<br/>
+				<p>
+					Join Project ScholaMundi today and take the first step towards realizing your college dreams!
+				</p>
+			</div>
+
+		</div>
+		<div class="cate">
+			<h2>Categories</h2>
+			<hr>
+			<a href="service.html">Free College Counseling</a>
+			<hr>
+			<a href="visaGuide.html">Visa Guidence for international students</a>
 		</div>
 	</section>
-	<!-- Registration section ends from here -->
-
-
-	<!-- Experts section starts from here -->
-	<section id="experts">
-		<h1>Community Experts</h1>
-		<p>Our experienced professionels</p>
-		<div class="expert-box">
-			<div class="profile">
-				<img src="img/pro2.webp" alt="" class="profile-img">
-				<h6>Sofia Candela</h6>
-				<p>Italy</p>
-				<div class="pro-links">
-					<a href="https://www.facebook.com/your-profile" target="_blank">
-						<i class="fab fa-facebook"></i>
-					</a>
-					<a href="https://www.instagram.com/your-profile" target="_blank">
-						<i class="fab fa-instagram"></i>
-					</a>
-					<a href="https://www.linkedin.com/in/your-profile" target="_blank">
-						<i class="fab fa-linkedin-in"></i>
-					</a>
-				</div>
-			</div>
-
-			<div class="profile">
-				<img src="img/pro2.webp" alt="" class="profile-img">
-				<h6>Sofia Candela</h6>
-				<p>Italy</p>
-				<div class="pro-links">
-					<a href="https://www.facebook.com/your-profile" target="_blank">
-						<i class="fab fa-facebook"></i>
-					</a>
-					<a href="https://www.instagram.com/sofia.candela_" target="_blank">
-						<i class="fab fa-instagram"></i>
-					</a>
-					<a href="https://www.linkedin.com/in/your-profile" target="_blank">
-						<i class="fab fa-linkedin-in"></i>
-					</a>
-				</div>
-			</div>
-
-
-			<div class="profile">
-				<img src="img/pro2.webp" alt="" class="profile-img">
-				<h6>Sofia Candela</h6>
-				<p>Italy</p>
-				<div class="pro-links">
-					<a href="https://www.facebook.com/your-profile" target="_blank">
-						<i class="fab fa-facebook"></i>
-					</a>
-					<a href="https://www.instagram.com/your-profile" target="_blank">
-						<i class="fab fa-instagram"></i>
-					</a>
-					<a href="https://www.linkedin.com/in/your-profile" target="_blank">
-						<i class="fab fa-linkedin-in"></i>
-					</a>
-				</div>
-			</div>
-
-			<div class="profile">
-				<img src="img/pro2.webp" alt="" class="profile-img">
-				<h6>Sofia Candela</h6>
-				<p>Italy</p>
-				<div class="pro-links">
-					<a href="https://www.facebook.com/your-profile" target="_blank">
-						<i class="fab fa-facebook"></i>
-					</a>
-					<a href="https://www.instagram.com/your-profile" target="_blank">
-						<i class="fab fa-instagram"></i>
-					</a>
-					<a href="https://www.linkedin.com/in/your-profile" target="_blank">
-						<i class="fab fa-linkedin-in"></i>
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Experts section ends from here -->
+	<!-- Blog container ends from here -->
 
 	<!-- Footer section starts from here -->
 	<footer>
 		<div class="footer-col">
-			<h3>Top Universities</h3>
+			<h2>Top Universities</h2>
 			<li>University of Wisconsin - Superior</li>
 			<li>Harvard University</li>
 			<li>University of Minnesota - Duluth</li>
@@ -337,14 +341,14 @@
 		</div>
 
 		<div class="footer-col">
-			<h3>Quick Links</h3>
+			<h2>Quick Links</h2>
 			<li>Schola Mundi</li>
 			<li>About Us</li>
 			<li>Contact</li>
 		</div>
 
 		<div class="footer-col">
-			<h3>Mentors</h3>
+			<h2>Mentors</h2>
 			<li>Basith Nasik</li>
 			<li>Sofia Candela</li>
 			<li>Joe Scarfo</li>
@@ -352,7 +356,7 @@
 		</div>
 
 		<div class="footer-col">
-			<h3>Contact Us</h3>
+			<h2>Contact Us</h2>
 			<p>We will help you achieve your dream</p>
 
 			<div class="subscribe">

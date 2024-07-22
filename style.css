@@ -16,7 +16,7 @@ h1
 {
 	font-size: 2.5rem;
 	font-weight: 700;
-	color: rgb(35, 35, 85);
+	color: #800000;
 }
 
 span
@@ -67,6 +67,18 @@ nav .navigation
 {
 	display: none;
 }
+.profile img {
+	width: 193px;
+	height: 193px;
+	border-radius: 50%;
+	border: 10px solid #fff; /* Adjust the border size and color as needed */
+	box-shadow: 0 0 5px #800000; /* Optional: Add a shadow for a 3D effect */
+}
+
+.pro-links a {
+	color: inherit; /* Inherit color from the parent element */
+	text-decoration: none; /* Remove underline */
+}
 
 nav .navigation ul
 {
@@ -84,7 +96,7 @@ nav .navigation ul li
 nav .navigation ul li a
 {
 	text-decoration: none;
-	color: rgb(21, 21, 100);
+	color: #800000;
 	font-size: 16px;
 	font-weight: 500;
 	transition: 0.3s ease;
@@ -103,7 +115,7 @@ nav .navigation ul li a:hover
 /*------------- Hero section styling start --------------*/
 #home
 {
-	background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url("img/back.jpg");
+	background-image: linear-gradient(rgba(121, 15, 15, 0.3), rgba(5,4,46,0.7)), url("img/back.jpg");
 	width: 100%;
 	height: 100vh;
 	background-size: cover;
@@ -149,13 +161,13 @@ nav .navigation ul li a:hover
 #home a.blue
 {
 	color: #fff;
-	background: rgb(21, 21, 100);
+	background: #800000;
 	transition: 0.3s ease;
 }
 
 #home a.blue:hover
 {
-	color: rgb(21, 21, 100);
+	color: #800000;
 	background: #fff;
 }
 
@@ -168,7 +180,7 @@ nav .navigation ul li a:hover
 
 #home a.yellow:hover
 {
-	color: rgb(21, 21, 100);
+	color: #800000;
 	background: #fff;
 }
 /*------------- Hero section styling end --------------*/
@@ -204,14 +216,14 @@ nav .navigation ul li a:hover
 #features .fea-box i
 {
 	font-size: 2.3rem;
-	color: rgb(44, 44, 80);
+	color: #800000;
 }
 
 #features .fea-box h3
 {
 	font-size: 1.2rem;
 	font-weight: 600;
-	color: rgb(46, 46, 59);
+	color: #800000;
 	padding: 13px 0 7px 0;
 }
 
@@ -219,7 +231,7 @@ nav .navigation ul li a:hover
 {
 	font-size: 1rem;
 	font-weight: 400;
-	color: rgb(70, 70, 87);
+	color: #400707;
 }
 /*------------- Features section styling end -------------*/
 
@@ -286,7 +298,7 @@ nav .navigation ul li a:hover
 #registration
 {
 	padding: 6vw 8vw 6vw 8vw;
-	background-image: linear-gradient(rgba(99,112,168,0.5), rgba(81,91,233,0.5)),url("img/signup.jpg");
+	background-image: linear-gradient(rgba(151, 23, 27, 0.232), rgba(161, 30, 30, 0.298)),url("img/signup.jpg");
 	width: 100%;
 	height: 100%;
 	background-size: cover;
@@ -366,7 +378,7 @@ nav .navigation ul li a:hover
 
 #registration .form a.yellow:hover
 {
-	color: rgb(21, 21, 100);
+	color: #800000;
 	background: #fff;
 }
 /*------------- Registration section styling end ----------*/
@@ -408,14 +420,14 @@ nav .navigation ul li a:hover
 .pro-links i
 {
 	padding: 10px 13px;
-	border: 1px solid rgb(21, 21, 100);
+	border: 1px solid #800000;
 	cursor: pointer;
 	transition: 0.3s ease;
 }
 
 .pro-links i:hover
 {
-	background: rgb(21, 21, 100);
+	background: #800000;
 	color: #fff;
 }
 /*------------- Experts section styling ends ----------*/
@@ -426,7 +438,7 @@ nav .navigation ul li a:hover
 footer
 {
 	padding: 8vw;
-	background-color: #101c32;
+	background-color: #631313;
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
@@ -498,7 +510,7 @@ footer .subscribe a.yellow
 
 footer .subscribe a.yellow:hover
 {
-	color: rgb(21, 21, 100);
+	color: #800000;
 	background: #fff;
 }
 
