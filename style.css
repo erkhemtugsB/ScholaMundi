@@ -448,6 +448,13 @@ footer
 footer .footer-col
 {
 	padding-bottom: 40px;
+	text-decoration: none;
+}
+
+.quick-link
+{
+	text-decoration: none;
+	color: #7b838a;
 }
 
 footer h3
