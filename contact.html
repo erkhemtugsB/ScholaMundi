@@ -92,15 +92,14 @@
 			<h4>Book a free 15 minutes appointment</h4>
 			<p>Get in touch</p>
 			<div class="form-row">
-				<input type="text" placeholder="Your Name">
-				<input type="email" placeholder="Your Email">
+				<input type="text" id="name" placeholder="Your Name">
+				<input type="email" id="email" placeholder="Your Email">
 			</div>
 			<div class="form-col">
-				<textarea name="" id="" cols="30" rows="8" placeholder="Your message..."></textarea>
+				<textarea id="time" cols="30" rows="8" placeholder="Please provide your available time (January 1st at 10 am etc...)"></textarea>
 			</div>
-
 			<div class="form-col">
-				<button>Send Message</button>
+				<button id="send-email">Send Message</button>
 			</div>
 		</div>
 	</section>
@@ -157,6 +156,24 @@
 		</div>
 	</footer>
 	<!-- Footer section ends from here -->
+
+	<!--Handle email-->
+	<script>
+		document.getElementById('send-email').addEventListener('click', function(event) {
+		  event.preventDefault(); // Prevent the default form submission
+	  
+		  const name = encodeURIComponent(document.getElementById('name').value);
+		  const email = encodeURIComponent(document.getElementById('email').value);
+		  const time = encodeURIComponent(document.getElementById('time').value);
+	  
+		  const subject = "Contact Form Submission";
+		  const body = `Name: ${name}%0AEmail: ${email}%0AMessage: ${time}`;
+	  
+		  const mailtoLink = `mailto:basithnasikwri@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+	  
+		  window.location.href = mailtoLink;
+		});
+	  </script>
 
 	<script>
 		// Show menu links on burger click
