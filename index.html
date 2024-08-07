@@ -237,12 +237,12 @@
 		<div class="form">
 			<h3>Get in touch with us NOW!</h3>
 
-			<input type="text" placeholder="Your Name" name="" id="">
-			<input type="email" placeholder="Your Email address" name="" id="">
-			<input type="text" placeholder="Your Message" name="" id="">
+			<input type="text" placeholder="Your Name" name="name" id="name">
+			<input type="email" placeholder="Your Email address" name="email" id="email">
+			<input type="text" placeholder="Your Message" name="message" id="message">
 
 			<div class="btn">
-				<a href="#" class="yellow">Submit Form</a>
+				<a id="submit-form" class="yellow">Submit Form</a>
 			</div>
 		</div>
 	</section>
@@ -274,10 +274,11 @@
 			</div>
 
 			<div class="profile">
-				<img src="img/pro2.webp" alt="" class="profile-img">
+				<img src="img/usman.jpg" alt="" class="profile-img">
 				<h6>Usman (Pakistan)</h6>
 				<p>
-					"My name is Usman and I am from Pakistan. Through ScholaMundi I was able to get admitted to UWS and get US visa."
+					"My name is Usman and I am from Pakistan. Through ScholaMundi I was able to get admitted to UWS and
+					get US visa."
 				</p>
 				<div class="pro-links">
 					<a href="https://www.facebook.com/your-profile" target="_blank">
@@ -335,15 +336,20 @@
 		<div class="footer-col">
 			<h3>Top Universities</h3>
 			<li>University of Wisconsin - Superior</li>
-			<li>Harvard University</li>
 			<li>University of Minnesota - Duluth</li>
 			<li>University of Wisconsin - Madison</li>
+			<li>College of Saint Scholastica</li>
+			<li>Lake Superior College</li>
+			<li>Northwood Tech College</li>
+
 		</div>
 
 		<div class="footer-col">
 			<h3>Quick Links</h3>
 			<li><a href="index.html" class="quick-link">ScholaMundi</a></li>
 			<li><a href="about.html" class="quick-link">About</a></li>
+			<li><a href="team.html" class="quick-link">Meet the Team</a></li>
+			<li><a href="service.html" class="quick-link">About Services</a></li>
 			<li><a href="contact.html" class="quick-link">Contact</a></li>
 			<li><a href="apply.html" class="quick-link">Apply</a></li>
 		</div>
@@ -372,9 +378,15 @@
 					target="_blank">Erkhemtugs.com</a>
 			</p>
 			<div class="pro-links">
-				<i class="fab fa-facebook"></i>
-				<i class="fab fa-instagram"></i>
-				<i class="fab fa-linkedin-in"></i>
+				<a href="https://www.facebook.com/your-profile" target="_blank">
+					<i class="fab fa-facebook"></i>
+				</a>
+				<a href="https://www.instagram.com/scholamundi_/" target="_blank">
+					<i class="fab fa-instagram"></i>
+				</a>
+				<a href="https://www.linkedin.com/in/your-profile" target="_blank">
+					<i class="fab fa-linkedin-in"></i>
+				</a>
 			</div>
 		</div>
 	</footer>
@@ -389,6 +401,37 @@
 		// Hide navbar on click function
 		$('#menu-close').click(function () {
 			$('nav .navigation ul').removeClass('active')
+		});
+	</script>
+
+	<!--EMAILING FUNCTION-->
+	<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+	<script>
+		(function () {
+			emailjs.init("TXOT5acUK8e-cgQm3"); // Replace 'YOUR_USER_ID' with your EmailJS user ID
+		})();
+
+		document.getElementById('submit-form').addEventListener('click', function (event) {
+			event.preventDefault();
+
+			var name = document.getElementById('name').value;
+			var email = document.getElementById('email').value;
+			var message = document.getElementById('message').value;
+
+			var templateParams = {
+				from_name: name,
+				from_email: email,
+				message: message
+			};
+
+			emailjs.send('service_e6fz00c', 'template_wyz3rs5', templateParams)
+				.then(function (response) {
+					console.log('SUCCESS!', response.status, response.text);
+					alert('Form submitted successfully!');
+				}, function (error) {
+					console.log('FAILED...', error);
+					alert('Form submission failed. Please try again.');
+				});
 		});
 	</script>
 </body>

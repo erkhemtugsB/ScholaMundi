@@ -380,6 +380,7 @@ nav .navigation ul li a:hover
 {
 	color: #800000;
 	background: #fff;
+	cursor: pointer;
 }
 /*------------- Registration section styling end ----------*/
 
@@ -519,7 +520,9 @@ footer .subscribe a.yellow:hover
 {
 	color: #800000;
 	background: #fff;
+	cursor: pointer;
 }
+
 
 footer .copyright
 {
